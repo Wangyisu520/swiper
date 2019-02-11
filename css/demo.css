@@ -1,0 +1,101 @@
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    font-size: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#swiper .img-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+#swiper .img-box li {
+    display: inline-block;
+    height: 100%;
+}
+
+#swiper .img-box li img {
+    width: 100%;
+    height: 100%;
+}
+
+#swiper .btn {
+    position: absolute;
+    height: 35px;
+    width: 100%;
+    top: 50%;
+    display: none;
+}
+
+#swiper .btn a {
+    position: absolute;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+#swiper .btn .prev {
+    left: 0;
+    border-radius: 0 50% 50% 0;
+}
+
+#swiper .btn .next {
+    right: 0;
+    border-radius: 50% 0 0 50%;
+}
+
+#swiper .btn a span {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    margin-top: 5px;
+    background-image: url("../img/taobao.png");
+}
+
+#swiper .btn .prev span {
+    background-position: -200px -95px;
+    margin-left: 10px;
+}
+
+#swiper .btn .next span {
+    background-position: -200px -115px;
+    margin-left: 16px;
+}
+
+#swiper .index-box {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#swiper .index-box ul {
+    display: inline-block;
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#swiper .index-box ul li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 3px;
+}
+
+#swiper .index-box .active {
+    background-color: #f40;
+}
